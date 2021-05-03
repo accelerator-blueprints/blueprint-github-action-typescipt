@@ -13,7 +13,7 @@ jobs:
         github.actor != 'dependabot[bot]' || github.actor != 'renovate[bot]' ||
         github.actor != 'renovate-bot'
     steps:
-      
+
       - name: identify actor & creator
         run: |
           echo "actor: ${{ github.actor }}"
@@ -22,7 +22,7 @@ jobs:
       - name: validate branch name
         uses: AlbertHernandez/branch-name-action@v1.0.2
         with:
-          branch_pattern: 'feature|fix|bug|chore|hotfix|docs|dependencies|deps|renovate'
+          branch_pattern: 'feature|fix|bug|chore|hotfix|docs|dependencies|deps'
           ignore_branch_pattern: 'master|main|renovate'
           comment_for_invalid_branch_name: |
             **Pro Tip!**

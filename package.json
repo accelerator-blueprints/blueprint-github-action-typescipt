@@ -52,7 +52,7 @@
     "lint": "eslint src/**/*.ts",
     "pack": "tsc && ncc build --source-map --license license -o dist",
     "test": "npm run test:unit",
-    "test:unit": "jest unit"
+    "test:unit": "jest unit --coverage"
   },
   "snyk": true,
   "version": "0.0.1"

@@ -1,24 +1,34 @@
-name: test.stuff
+name: test
 
 on:
   workflow_dispatch:
+  # rebuild any PRs and main branch changes
+  pull_request:
+    branches: [$default-branch, main]
+    paths:
+      - 'dist/**'
+  push:
+    branches:
+      - $default-branch
+      - main
+      - 'releases/*'
+    paths:
+      - 'dist/**'
 
 jobs:
-  show:
+  test: # make sure the action works on a clean machine with(out) building
     runs-on: ubuntu-latest
+    needs: [ build ]
 
     steps:
-      - uses: actions/checkout@v2.3.4
 
-      - name: calculate date
-        id: envs
-        run: echo "::set-output name=CURRENT_DATE::$(date -u +'%Y-%m-%dT%H-%M')"
+      - uses: actions/checkout@v2
 
-      - name: check on different stuff
-        run: |
-          echo "${{steps.envs.outputs.current_date}}"
-          echo "${{ github.action_path }}"
+      - name: run-action
+        uses: ./
+        id: run_action
+        with:
+          name: world
 
-      - name: show github vars
-        run: |
-          echo " ${{ toJson(github) }}"
+      - name: log-action-output
+        run: echo ${{steps.run_action.outputs.my_output}}
