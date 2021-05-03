@@ -18,6 +18,8 @@ jobs:
         run: |
           echo "${{steps.envs.outputs.current_date}}"
           echo "${{ github.action_path }}"
+          echo "all env"
+          env
 
       - name: show github vars
         run: |

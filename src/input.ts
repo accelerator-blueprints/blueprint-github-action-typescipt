@@ -13,9 +13,9 @@ class Input {
   constructor() {}
 
   inputs: Inputs = {
-    name: this.get('name')
+    name: Input.get('name')
   }
-  private get(input: string): Variable {
+  private static get(input: string): Variable {
     const fromInput = core.getInput(input)
     return {key: input, value: fromInput}
   }

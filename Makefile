@@ -34,4 +34,4 @@ run: ## Run action locally
 	@npm run exec
 
 test: ## Run tests
-	@npm run test
+	@npm run test:jest
