@@ -1,0 +1,13 @@
+name: 'Github Action <TODO_NAME> Template'
+description: 'TODO: description'
+author: ivankatliarchuk <https://github.com/ivankatliarchuk>
+inputs:
+  name:
+    description: 'input description here'
+    default: 'hello typescript'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  color: "pink"
+  icon: "bell"
