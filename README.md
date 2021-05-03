@@ -23,7 +23,7 @@
 [**Create a repository using this template →**][template.generate]
 
 <!-- resources -->
-[template.generate]: https://github.com/workflow-actions/blueprint-github-action-typescipt/generate
+[template.generate]: https://github.com/accelerator-blueprints/blueprint-github-action-typescipt/generate
 [pre-commit.badge]: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
 [pre-commit.url]: https://github.com/pre-commit/pre-commit
 [code-style.badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
