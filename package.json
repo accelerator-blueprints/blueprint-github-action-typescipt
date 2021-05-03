@@ -11,7 +11,7 @@
   "devDependencies": {
     "@types/jest": "26.0.23",
     "@types/node": "14.14.21",
-    "@types/sinon": "9.0.10",
+    "@types/sinon": "9.0.11",
     "@typescript-eslint/eslint-plugin": "4.22.0",
     "@typescript-eslint/parser": "4.22.0",
     "@vercel/ncc": "^0.28.3",
@@ -24,7 +24,7 @@
     "jest-circus": "26.6.3",
     "mocha-param": "2.0.1",
     "prettier": "^2.2.1",
-    "sinon": "9.2.3",
+    "sinon": "9.2.4",
     "snyk": "1.575.0",
     "ts-jest": "26.4.4",
     "typescript": "^4.2.4"
