@@ -38,6 +38,9 @@
         "ignoreUrls": true
       }
     ],
+    "valid-jsdoc": [
+      "warn"
+    ],
     "no-unused-vars": [
       "error",
       {

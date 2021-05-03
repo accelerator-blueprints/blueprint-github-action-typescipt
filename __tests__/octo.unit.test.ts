@@ -1,4 +1,6 @@
+// @ts-ignore
 import nock from 'nock';
+// @ts-ignore
 import * as fixtures from './fixtures/init.test';
 
 import * as oct from '../src/octo'
