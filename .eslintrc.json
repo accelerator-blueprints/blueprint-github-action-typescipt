@@ -38,9 +38,6 @@
         "ignoreUrls": true
       }
     ],
-    "valid-jsdoc": [
-      "warn"
-    ],
     "no-unused-vars": [
       "error",
       {
@@ -52,6 +49,9 @@
     ],
     "object-curly-spacing": "off",
     "require-jsdoc": "off",
-    "semi": "off"
+    "semi": "off",
+    "valid-jsdoc": [
+      "warn"
+    ]
   }
 }

@@ -55,9 +55,9 @@
     "lint": "eslint src/**/*.ts",
     "pack": "tsc --noEmit && ncc build --license license",
     "test": "npm run test:unit",
+    "test:coverage": "tsc --noEmit && jest --coverage",
     "test:jest": "tsc --noEmit && jest",
-    "test:unit": "jest unit",
-    "test:coverage": "tsc --noEmit && jest --coverage"
+    "test:unit": "jest unit"
   },
   "snyk": true,
   "version": "0.0.1"
