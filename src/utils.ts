@@ -1,4 +1,6 @@
 import {ExtensionFn} from 'env-var'
+import * as fs from 'fs'
+import * as file from 'filewtf'
 
 /**
  * This function parses the GitHub repo owner from the repo name
@@ -75,3 +77,28 @@ const isTagRef = (ref) => {
   return matcher.test(ref);
 }
 
+/**
+ * This function lists all the items in the
+ * target root directory recurrsively.
+ * @param rootDir the root directory to be walked
+ */
+export const listFiles = (rootDir: string) => {
+  return file.walkthrough(rootDir);
+}
+
+/**
+ * This function reads the content of a file.
+ * @param filename the filename of the file to be read
+ */
+export const readFileContent = (filename: string) => {
+  return fs.readFileSync(filename, 'utf8');
+}
+
+/**
+ * This function checks if a filename is a yaml.
+ * @param filename the filename that needs to be checked
+ */
+export const isYmlFilename = (filename: string) => {
+  const matcher = new RegExp('^.*\.(yml|yaml)$');
+  return matcher.test(filename);
+}

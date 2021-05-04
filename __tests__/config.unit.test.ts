@@ -1,7 +1,6 @@
 // @ts-ignore
 import * as fixtures from './fixtures/init.test';
 import {Config} from '../src/config'
-// import process from 'process'
 
 describe('config: test suite', () => {
   beforeAll(() => {
@@ -11,7 +10,7 @@ describe('config: test suite', () => {
     fixtures.cleanTestEnv();
   });
 
-  test('config: default config values', () => {
+  test('should validate config values', () => {
     const cfg = new Config()
     expect(cfg.repo).toEqual('octocat')
     expect(cfg.owner).toEqual('accelerator-blueprints')

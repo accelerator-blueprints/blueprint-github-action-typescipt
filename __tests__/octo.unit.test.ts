@@ -24,7 +24,7 @@ describe('oct: test suite', () => {
     nock.enableNetConnect();
   })
 
-  test('oct: instantiate octokit client', async () => {
+  test('should instantiate github client', async () => {
     nock(GitHubEndpoint)
       .post(AuthScope)
       .reply(200, { token: 'test' });

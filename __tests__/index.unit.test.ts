@@ -9,16 +9,13 @@ describe('index: action debug messages', () => {
     jest.resetModules();
   });
 
-  it('outputs a debug message', async () => {
+  it('should output a debug message', async () => {
     const debugMock = jest.spyOn(core, 'debug')
     await run()
     expect(debugMock).toBeCalledTimes(3)
   })
-})
 
-describe('index: successful path', () => {
-
-  it('does output messages', async () => {
+  it('should not output a messages', async () => {
     const setOutMock = jest.spyOn(core, 'setOutput')
     await run()
     expect(setOutMock).toBeCalledTimes(1)

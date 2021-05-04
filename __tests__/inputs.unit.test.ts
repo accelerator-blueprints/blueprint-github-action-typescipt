@@ -13,7 +13,7 @@ describe('inputs unit tests', () => {
     delete process.env['GITHUB_WORKSPACE']
   })
 
-  test('test input runs', () => {
+  test('should validate inputs', () => {
     const inputs = new Input().inputs
     const actual = inputs.name.value
     expect(actual).toBeDefined()
