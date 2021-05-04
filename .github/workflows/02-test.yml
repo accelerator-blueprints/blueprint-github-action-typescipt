@@ -1,19 +1,15 @@
-name: test
+name: run-action
 
 on:
   workflow_dispatch:
   # rebuild any PRs and main branch changes
   pull_request:
     branches: [$default-branch, main]
-    paths:
-      - 'dist/**'
   push:
     branches:
       - $default-branch
       - main
       - 'releases/*'
-    paths:
-      - 'dist/**'
 
 jobs:
   test: # make sure the action works on a clean machine with(out) building
