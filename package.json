@@ -26,7 +26,7 @@
     "jest-circus": "26.6.3",
     "mocha-param": "2.0.1",
     "nock": "13.0.11",
-    "prettier": "2.2.1",
+    "prettier": "2.3.0",
     "sinon": "10.0.0",
     "snyk": "1.608.0",
     "ts-jest": "26.5.5",
