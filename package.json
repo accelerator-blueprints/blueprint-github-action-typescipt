@@ -10,7 +10,7 @@
   },
   "description": "TypeScript template/accelerator action",
   "devDependencies": {
-    "@types/jest": "26.0.23",
+    "@types/jest": "26.0.24",
     "@types/node": "16.7.1",
     "@types/sinon": "10.0.1",
     "@typescript-eslint/eslint-plugin": "4.29.1",
