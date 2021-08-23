@@ -21,7 +21,7 @@
     "eslint-config-google": "0.14.0",
     "filewtf": "1.0.0",
     "git-branch-is": "4.0.0",
-    "husky": "6.0.0",
+    "husky": "7.0.1",
     "jest": "27.0.6",
     "jest-circus": "26.6.3",
     "mocha-param": "2.0.1",
