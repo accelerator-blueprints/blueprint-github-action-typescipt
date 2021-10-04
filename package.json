@@ -23,7 +23,7 @@
     "git-branch-is": "4.0.0",
     "husky": "7.0.1",
     "jest": "27.0.6",
-    "jest-circus": "27.0.6",
+    "jest-circus": "27.2.4",
     "mocha-param": "2.0.1",
     "nock": "13.1.2",
     "prettier": "2.3.2",
