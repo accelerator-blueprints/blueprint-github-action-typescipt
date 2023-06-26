@@ -27,7 +27,7 @@
     "mocha-param": "2.0.1",
     "nock": "13.1.2",
     "prettier": "2.8.7",
-    "sinon": "11.1.2",
+    "sinon": "15.2.0",
     "snyk": "1.1112.0",
     "ts-jest": "29.1.0",
     "typescript": "5.0.4"
