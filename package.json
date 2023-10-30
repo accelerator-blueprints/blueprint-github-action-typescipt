@@ -13,7 +13,7 @@
     "@types/jest": "29.5.1",
     "@types/node": "18.15.13",
     "@types/sinon": "10.0.2",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/eslint-plugin": "6.9.0",
     "@typescript-eslint/parser": "5.62.0",
     "@vercel/ncc": "0.33.3",
     "chai": "4.3.7",
