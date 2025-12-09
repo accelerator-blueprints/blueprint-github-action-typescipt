@@ -4,7 +4,7 @@
     "url": "https://github.com/workflow-actions/first-action/issues"
   },
   "dependencies": {
-    "@actions/core": "^1.2.7",
+    "@actions/core": "^2.0.0",
     "@actions/github": "^5.0.0",
     "env-var": "7.1.1"
   },
