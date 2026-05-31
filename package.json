@@ -20,7 +20,7 @@
     "eslint": "8.46.0",
     "eslint-config-google": "0.14.0",
     "filewtf": "1.0.0",
-    "git-branch-is": "4.0.0",
+    "git-branch-is": "5.0.0",
     "husky": "8.0.1",
     "jest": "29.5.0",
     "jest-circus": "29.5.0",
